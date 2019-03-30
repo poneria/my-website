@@ -1,0 +1,83 @@
+/* CREDITS
+	gradient backgrounds using: https://cssgradient.io
+		dark green: #09792f | light green: #6ce6a7
+*/
+
+body {
+	font-family: helvetica;
+}
+
+header {
+	background: rgb(9,121,47);
+	background: linear-gradient(90deg, rgba(9,121,47,1) 0%, rgba(108,230,167,1) 100%);
+}
+
+.header-title{
+	color: #ffffff;
+	font-size: 65px;
+	font-weight: bold;
+	margin: auto;
+	text-align: center;
+	width: 700px;
+}
+
+.header-subtitle{
+	color: #ffffff;
+	font-size: 28px;
+	font-weight: 100;
+	margin: auto;
+	opacity: 0.8;
+	width: 700px;
+}
+
+.menu{
+	padding: 20px;
+}
+
+.menu > li {
+	color: #ffffff;
+	display: inline-block;
+	font-size: 20px;
+	margin: 10px;
+	padding: 10px 30px;
+	text-transform: lowercase;
+
+	border: 2px solid #6ce6a7;
+	opacity: 0.8;
+	transition: 0.3s all ease-in-out 0s;
+		-webkit-transition: 0.3s all ease-in-out 0s; /* Chrome/Safari */
+		-moz-transition: 0.3s all ease-in-out 0s; /* Firefox */
+		-o-transition: 0.3s all ease-in-out 0s; /* Opera */
+}
+
+.menu > li:hover {
+	border-color: #ffffff;
+	border-style: solid;
+	border-width: 2px 2px 8px 2px;
+	opacity: 1.0;
+	transition: 0.3s all ease-in-out 0s;
+		-webkit-transition: 0.3s all ease-in-out 0s; /* Chrome/Safari */
+		-moz-transition: 0.3s all ease-in-out 0s; /* Firefox */
+		-o-transition: 0.3s all ease-in-out 0s; /* Opera */
+}
+
+#menu-select {
+	color: #ffffff;
+	opacity: 1.0;
+
+	border-color: #6ce6a7;
+	border-style: solid;
+	border-width: 2px 2px 8px 2px;
+	transition: 0.3s all ease-in-out 0s;
+		-webkit-transition: 0.3s all ease-in-out 0s; /* Chrome/Safari */
+		-moz-transition: 0.3s all ease-in-out 0s; /* Firefox */
+		-o-transition: 0.3s all ease-in-out 0s; /* Opera */
+}
+
+#menu-select:hover {
+	border-color: #ffffff;
+	transition: 0.3s all ease-in-out 0s;
+		-webkit-transition: 0.3s all ease-in-out 0s; /* Chrome/Safari */
+		-moz-transition: 0.3s all ease-in-out 0s; /* Firefox */
+		-o-transition: 0.3s all ease-in-out 0s; /* Opera */
+}
