@@ -38,64 +38,47 @@
 	
 	<section class="content">
 		<div class="container">
-			<h3 class="content-subtitle">Contact</h3>
+			<h3 class="content-subtitle">Contact Me</h3>
 
 			<div class="column">
-				<p id="button-github" class="col-button">
+				<p id="button1" class="col-button">
 					<i class="fab fa-github fa-2x float-icon dark-icon"></i>  code with me
 				</p>
-				<p id="content-github" class="col-content">
+				<p id="content1" class="col-content">
 					<a href="https://www.github.com/poneria">github.com/poneria</a>
 				</p>
 			</div>
 			<div class="column">
 				
-				<p id="button-email" class="col-button">
+				<p id="button2" class="col-button">
 					<i class="fas fa-envelope fa-2x float-icon dark-icon"></i>  send me an email
 				</p>
-				<p id="content-email" class="col-content">
+				<p id="content2" class="col-content">
 					meganr.oneill <br>at gmail
 				</p>
 			</div>
 			<div class="column">
-				<p id="button-twitter" class="col-button">
+				<p id="button3" class="col-button">
 					<i class="fab fa-twitter fa-2x float-icon dark-icon"></i>  send me a tweet
 				</p>
-				<p id="content-twitter" class="col-content">
+				<p id="content3" class="col-content">
 					<a href="https://www.twitter.com/_poneria">@_poneria</a>
 				</p>
 			</div>
 		</div>
 	</section>
 
-	<!-- notes for later	
-		<section class="tab" id="content-contact">
-				<p>contact >> email, github, twitter</p>
-		</section>
-
-		<section id="content-projects">
-			<p>projects >> show off github pick 3</p>
-		</section>
-
-		<section id="content-skills">
-			<p>skills >> past jobs / resume, but as transferrable skills</p>
-		</section>
-
-		<section id="content-hobbies">
-			<p>hobbies >> hobbies as transferrable skills + interests</p>
-		</section>
-	-->
 	<script>
 		$(document).ready(function() {
 			// content boxes reveal
-			$('#button-github').on('click', function() {
-				$('#content-github').slideToggle();
+			$('#button1').on('click', function() {
+				$('#content1').slideToggle();
 			});
-			$('#button-email').on('click', function() {
-				$('#content-email').slideToggle();
+			$('#button2').on('click', function() {
+				$('#content2').slideToggle();
 			});
-			$('#button-twitter').on('click', function() {
-				$('#content-twitter').slideToggle();
+			$('#button3').on('click', function() {
+				$('#content3').slideToggle();
 			});
 		});
 
