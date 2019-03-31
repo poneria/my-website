@@ -8,7 +8,9 @@
 	<title>Megan O'Neill | Home</title>
 
 	<link href="css/style.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
 </head>
 <body>
 	
@@ -34,40 +36,37 @@
 		</div>
 	</header>
 	
-	<section class="contact">
+	<section class="content">
 		<div class="container">
-			<input id="patience" type="radio" name="tabs">
-				<label for="patience">patience</label>
-			<input id="workflow" type="radio" name="tabs">
-				<label for="workflow">workflow</label>
-			<input id="confidence" type="radio" name="tabs">
-				<label for="confidence">confidence</label>
-			<input id="practice" type="radio" name="tabs">
-				<label for="practice">practice</label>
+			<h3 class="content-subtitle">Contact</h3>
 
-			<section id="content-patience">
-				<p>bus driving</p>
-			</section>
-
-			<section id="content-workflow">
-				<p>freelance writing</p>
-			</section>
-
-			<section id="confidence">
-				<p>food service</p>
-			</section>
-
-			<section id="practice">
-				<p>college as an adult</p>
-			</section>
-
-
-			<h3 class="content-subtitle"><br/>Select one to learn more</h3>
+			<div class="column">
+				<p id="button-github" class="col-button">
+					<i class="fab fa-github fa-2x float-icon dark-icon"></i>  code with me
+				</p>
+				<p id="content-github" class="col-content">
+					<a href="https://www.github.com/poneria">github.com/poneria</a>
+				</p>
+			</div>
+			<div class="column">
+				
+				<p id="button-email" class="col-button">
+					<i class="fas fa-envelope fa-2x float-icon dark-icon"></i>  send me an email
+				</p>
+				<p id="content-email" class="col-content">
+					meganr.oneill <br>at gmail
+				</p>
+			</div>
+			<div class="column">
+				<p id="button-twitter" class="col-button">
+					<i class="fab fa-twitter fa-2x float-icon dark-icon"></i>  send me a tweet
+				</p>
+				<p id="content-twitter" class="col-content">
+					<a href="https://www.twitter.com/_poneria">@_poneria</a>
+				</p>
+			</div>
 		</div>
 	</section>
-
-
-
 
 	<!-- notes for later	
 		<section class="tab" id="content-contact">
@@ -86,5 +85,21 @@
 			<p>hobbies >> hobbies as transferrable skills + interests</p>
 		</section>
 	-->
+	<script>
+		$(document).ready(function() {
+			// content boxes reveal
+			$('#button-github').on('click', function() {
+				$('#content-github').slideToggle();
+			});
+			$('#button-email').on('click', function() {
+				$('#content-email').slideToggle();
+			});
+			$('#button-twitter').on('click', function() {
+				$('#content-twitter').slideToggle();
+			});
+		});
+
+	</script>
+
 </body>
 </html>
