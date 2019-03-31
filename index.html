@@ -7,27 +7,46 @@
 	<meta name="keywords" content="landing page, megan o'neill" />
 	<title>Megan O'Neill | Home</title>
 
-	<link href="css/layout.css" rel="stylesheet">
-	<link href="css/theme.css" rel="stylesheet">		
+	<link href="css/style.css" rel="stylesheet">	
 </head>
 <body>
+	
 	<header class="title-wrapper">
 		<div class="container">
 			<h1 class="header-title">Megan O'Neill</h1>
 			<h3 class="header-subtitle">dream job: data visualization storytelling</h3>
 		</div>
-		<nav class="nav">
-			<div class="container">
-				<ul class="menu">
-					<li>projects</li>
-					<li>skills</li>
-					<li>hobbies</li>
-				</ul>
-			</div>
-		</nav>
 	</header>
 
+	<div class="nav">
+		<input id="tab-contact" type="radio" name="nav" checked>
+		<label for="tab-contact">contact</label>
 
+		<input id="tab-projects" type="radio" name="nav">
+		<label for="tab-projects">projects</label>
+
+		<input id="tab-skills" type="radio" name="nav">
+		<label for="tab-skills">skills</label>
+
+		<input id="tab-hobbies" type="radio" name="nav">
+		<label for="tab-hobbies">hobbies</label>
+			
+		<section class="tab" id="content-contact">
+				<p>contact --> email, github, twitter</p>
+		</section>
+
+		<section id="content-projects">
+			<p>projects --> show off github pick 3</p>
+		</section>
+
+		<section id="content-skills">
+			<p>skills --> past jobs / resume, but as transferrable skills</p>
+		</section>
+
+		<section id="content-hobbies">
+			<p>hobbies --> hobbies as transferrable skills + interests</p>
+		</section>
+	</div> 
 
 </body>
 </html>

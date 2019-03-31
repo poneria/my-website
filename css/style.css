@@ -1,0 +1,146 @@
+/* ----------------------------------------------------------------------
+-- CREDITS --------------------------------------------------------------
+	author: Megan O'Neill
+
+gradient backgrounds
+	https://cssgradient.io
+	dark green: #09792f | rgba(9,121,47,1)
+	medium green: #3aae6a | rgba(58,174,106,1)
+	light green: #6ce6a7 | rgba(108,230,167,1)
+
+radio button as tab navigation + responsive
+	https://codepen.io/oknoblich/pen/tfjFl
+*/
+
+/* ----------------------------------------------------------------------
+-- generic HTML ---------------------------------------------------------
+*/
+
+* {
+	box-sizing: border-box;
+		-webkit-box-sizing: border-box;	/* Chrome/Safari */
+		-moz-box-sizing: border-box; /* Firefox */
+}
+
+body {
+	font-family: helvetica;
+
+	margin: 0;
+}
+
+.container{
+	margin: auto;
+	max-width: 960px;
+	width: 100%;
+}
+
+/* ----------------------------------------------------------------------
+-- HEADER --------------------------------------------------------------
+*/
+
+header {
+	background: rgb(9,121,47);
+	background: linear-gradient(180deg, rgba(9,121,47,1) 0%, rgba(58,174,106,1) 100%);
+	height: 230px;
+	width: 100%;
+}
+
+.header-subtitle{
+	color: #ffffff;
+	font-size: 28px;
+	font-weight: 100;
+	margin: auto;
+	opacity: 0.8;
+	width: 700px;
+}
+
+.header-title{
+	color: #ffffff;
+	font-size: 65px;
+	font-weight: bold;
+	margin: auto;
+	text-align: center;
+	width: 700px;
+}
+
+.title-wrapper{
+	padding-top: 100px;
+	text-align: center;
+	width: 100%;
+}
+
+/* ----------------------------------------------------------------------
+-- NAVIGATION -----------------------------------------------------------
+*/
+
+.nav {
+	background: rgb(9,121,47);
+	background: linear-gradient(180deg, rgba(58,174,106,1) 0%, rgba(108,230,167,1) 75%);
+	height: 160px;
+	padding: 0px;
+	text-align: center;
+	width: 100%;
+}
+
+input {
+	display: none;	/* hides the radio button circle */
+}
+
+input:checked + label {
+	border-color: #ffffff;
+	border-style: solid;
+	border-width: 2px 2px 8px 2px;
+}
+
+input:checked + label:hover {
+	border-color: #ffffff;
+}
+
+label {
+	border: 2px solid #ffffff;
+	color: #ffffff;
+	display: inline-block;
+	font-size: 20px;
+	margin: 10px;
+	opacity: 0.8;
+	padding: 10px 30px;
+	text-align: center;
+	text-transform: lowercase;
+}
+
+label:hover {
+	cursor: pointer;
+	border-color: #ffffff;
+	border-style: solid;
+	border-width: 2px 2px 8px 2px;
+	opacity: 1.0;
+}
+
+/* 
+	transition: 0.3s all ease-in-out 0s;
+		-webkit-transition: 0.3s all ease-in-out 0s; /* Chrome/Safari *./
+		-moz-transition: 0.3s all ease-in-out 0s; /* Firefox *./
+		-o-transition: 0.3s all ease-in-out 0s; /* Opera *./
+*/
+
+/* ----------------------------------------------------------------------
+-- CONTENT --------------------------------------------------------------
+*/
+
+section {
+	background-color: #ffffff;
+	display: none;
+	padding: 20px;
+	width: 100%;
+}
+
+section > p {
+	text-align: left;
+}
+
+#tab-contact:checked ~ #content-contact,
+#tab-projects:checked ~ #content-projects,
+#tab-skills:checked ~ #content-skills,
+#tab-hobbies:checked ~ #content-hobbies {
+	display: block;
+}
