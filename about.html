@@ -9,6 +9,8 @@
 
 	<link href="css/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 	
@@ -34,23 +36,53 @@
 		</div>
 	</header>
 
+	<section class="content">
+		<div class="container">
+			<h3 class="content-subtitle">My Interests</h3>
 
-	<!-- notes for later	
-		<section class="tab" id="content-contact">
-				<p>contact >> email, github, twitter</p>
-		</section>
+			<div class="column">
+				<p id="button1" class="col-button">
+					<i class="fas fa-dice-d20 fa-2x float-icon dark-icon"></i>  gaming
+				</p>
+				<p id="content1" class="col-content">
+					pc<br>mmos<br>puzzles
+				</p>
+			</div>
+			<div class="column">
+				
+				<p id="button2" class="col-button">
+					<i class="fas fa-glasses fa-2x float-icon dark-icon"></i>  arts
+				</p>
+				<p id="content2" class="col-content">
+					books<br>drawing<br>music
+				</p>
+			</div>
+			<div class="column">
+				<p id="button3" class="col-button">
+					<i class="fas fa-running fa-2x float-icon dark-icon"></i>  exercise
+				</p>
+				<p id="content3" class="col-content">
+					soccer<br>running<br>biking
+				</p>
+			</div>
+		</div>
+	</section>
 
-		<section id="content-projects">
-			<p>projects >> show off github pick 3</p>
-		</section>
+	<script>
+		$(document).ready(function() {
+			// content boxes reveal
+			$('#button1').on('click', function() {
+				$('#content1').slideToggle();
+			});
+			$('#button2').on('click', function() {
+				$('#content2').slideToggle();
+			});
+			$('#button3').on('click', function() {
+				$('#content3').slideToggle();
+			});
+		});
 
-		<section id="content-skills">
-			<p>skills >> past jobs / resume, but as transferrable skills</p>
-		</section>
+	</script>
 
-		<section id="content-hobbies">
-			<p>hobbies >> hobbies as transferrable skills + interests</p>
-		</section>
-	-->
 </body>
 </html>
