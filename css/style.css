@@ -60,6 +60,19 @@ header {
 	width: 700px;
 }
 
+i.fab, i.fas {
+	color: #ffffff;
+}
+
+i.fab:hover, i.fas:hover {
+	color: #3aae6a;
+}
+
+.media > li {
+	display: inline-block;
+	margin: 0px 20px;
+}
+
 .title-wrapper{
 	padding-top: 100px;
 	text-align: center;
