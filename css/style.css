@@ -1,18 +1,4 @@
 /* ----------------------------------------------------------------------
--- CREDITS --------------------------------------------------------------
-	author: Megan O'Neill
-
-gradient backgrounds
-	https://cssgradient.io
-	dark green: #09792f | rgba(9,121,47,1)
-	medium green: #3aae6a | rgba(58,174,106,1)
-	light green: #6ce6a7 | rgba(108,230,167,1)
-
-radio button as tab navigation + responsive
-	https://codepen.io/oknoblich/pen/tfjFl
-*/
-
-/* ----------------------------------------------------------------------
 -- generic HTML ---------------------------------------------------------
 */
 
@@ -20,6 +6,11 @@ radio button as tab navigation + responsive
 	box-sizing: border-box;
 		-webkit-box-sizing: border-box;	/* Chrome/Safari */
 		-moz-box-sizing: border-box; /* Firefox */
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
 }
 
 body {
@@ -36,12 +27,18 @@ body {
 
 /* ----------------------------------------------------------------------
 -- HEADER --------------------------------------------------------------
+gradient backgrounds
+	https://cssgradient.io
+	dark green: #09792f | rgba(9,121,47,1)
+	medium green: #3aae6a | rgba(58,174,106,1)
+	light green: #6ce6a7 | rgba(108,230,167,1)
+	lightest green: #ace4c7 | rgba(172,228,199,1)
 */
 
 header {
 	background: rgb(9,121,47);
-	background: linear-gradient(180deg, rgba(9,121,47,1) 0%, rgba(58,174,106,1) 100%);
-	height: 230px;
+	background: linear-gradient(180deg, rgba(9,121,47,1) 0%, rgba(58,174,106,1) 50%, rgba(108,230,167,1) 100%);
+	height: 300px;
 	width: 100%;
 }
 
@@ -71,76 +68,91 @@ header {
 
 /* ----------------------------------------------------------------------
 -- NAVIGATION -----------------------------------------------------------
+gradient backgrounds
+	https://cssgradient.io
+	dark green: #09792f | rgba(9,121,47,1)
+	medium green: #3aae6a | rgba(58,174,106,1)
+	light green: #6ce6a7 | rgba(108,230,167,1)
+	lightest green: #ace4c7 | rgba(172,228,199,1)
 */
 
 .nav {
-	background: rgb(9,121,47);
-	background: linear-gradient(180deg, rgba(58,174,106,1) 0%, rgba(108,230,167,1) 75%);
-	height: 160px;
 	padding: 0px;
-	text-align: center;
-	width: 100%;
 }
 
-input {
-	display: none;	/* hides the radio button circle */
-}
-
-input:checked + label {
-	border-color: #ffffff;
-	border-style: solid;
-	border-width: 2px 2px 8px 2px;
-}
-
-input:checked + label:hover {
-	border-color: #ffffff;
-}
-
-label {
-	border: 2px solid #ffffff;
+.nav > li {
+	border: 2px solid #3aae6a;
 	color: #ffffff;
 	display: inline-block;
-	font-size: 20px;
-	margin: 10px;
 	opacity: 0.8;
+	margin: 10px;
 	padding: 10px 30px;
 	text-align: center;
 	text-transform: lowercase;
+
+	transition: 0.3s all ease-in-out 0s;
+		-webkit-transition: 0.3s all ease-in-out 0s; /* Chrome/Safari */
+		-moz-transition: 0.3s all ease-in-out 0s; /* Firefox */
+		-o-transition: 0.3s all ease-in-out 0s; /* Opera */
 }
 
-label:hover {
-	cursor: pointer;
-	border-color: #ffffff;
-	border-style: solid;
-	border-width: 2px 2px 8px 2px;
+.nav > li:hover {
+	background-color: rgba(172,228,199,0.5);
+	opacity: 1.0;
+
+	transition: 0.3s all ease-in-out 0s;
+		-webkit-transition: 0.3s all ease-in-out 0s; /* Chrome/Safari */
+		-moz-transition: 0.3s all ease-in-out 0s; /* Firefox */
+		-o-transition: 0.3s all ease-in-out 0s; /* Opera */
+}
+
+#nav-select {
+	background-color: rgba(58,174,106,1.0);
+	border: 2px solid #3aae6a;
 	opacity: 1.0;
 }
 
-/* 
+#nav-select:hover {
+	background-color: rgba(172,228,199,0.5);
+
 	transition: 0.3s all ease-in-out 0s;
-		-webkit-transition: 0.3s all ease-in-out 0s; /* Chrome/Safari *./
-		-moz-transition: 0.3s all ease-in-out 0s; /* Firefox *./
-		-o-transition: 0.3s all ease-in-out 0s; /* Opera *./
-*/
+		-webkit-transition: 0.3s all ease-in-out 0s; /* Chrome/Safari */
+		-moz-transition: 0.3s all ease-in-out 0s; /* Firefox */
+		-o-transition: 0.3s all ease-in-out 0s; /* Opera */
+}
 
 /* ----------------------------------------------------------------------
 -- CONTENT --------------------------------------------------------------
+gradient backgrounds
+	https://cssgradient.io
+	dark green: #09792f | rgba(9,121,47,1)
+	medium green: #3aae6a | rgba(58,174,106,1)
+	light green: #6ce6a7 | rgba(108,230,167,1)
+	lightest green: #ace4c7 | rgba(172,228,199,1)
+
+tabs navigation: 
+	https://codepen.io/oknoblich/pen/tfjFl
 */
 
-section {
-	background-color: #ffffff;
+.contact {
+	padding: 40px;
+}
+
+.content-subtitle {
+	color: #3aae6a;
+	font-weight: 400;
+	font-size: 30px;
+}
+
+input {
 	display: none;
-	padding: 20px;
-	width: 100%;
 }
 
-section > p {
-	text-align: left;
-}
-
-#tab-contact:checked ~ #content-contact,
-#tab-projects:checked ~ #content-projects,
-#tab-skills:checked ~ #content-skills,
-#tab-hobbies:checked ~ #content-hobbies {
-	display: block;
+label {
+	border: 2px solid #3aae6a;
+	height: 80px;
+	margin: 10px;
+	opacity: 0.5;
+	padding: 30px 30px;
+	text-align: center;
 }
