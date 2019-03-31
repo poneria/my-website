@@ -8,7 +8,9 @@
 	<title>Megan O'Neill | Works</title>
 
 	<link href="css/style.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
 </head>
 <body>
 	
@@ -34,22 +36,56 @@
 		</div>
 	</header>
 
-	<!-- notes for later	
-		<section class="tab" id="content-contact">
-				<p>contact >> email, github, twitter</p>
-		</section>
+	<section class="content">
+		<div class="container">
+			<h3 class="content-subtitle">Now I'm Just Showing Off</h3>
 
-		<section id="content-projects">
-			<p>projects >> show off github pick 3</p>
-		</section>
+			<div class="column">
+				<p id="button1" class="col-button">
+					<i class="fas fa-desktop fa-2x float-icon dark-icon"></i>  github 1
+				</p>
+				<p id="content1" class="col-content">
+					probably this site tbh
+				</p>
+			</div>
+			<div class="column">
+				
+				<p id="button2" class="col-button">
+					<i class="fas fa-keyboard fa-2x float-icon dark-icon"></i>  fave writing
+				</p>
+				<p id="content2" class="col-content">
+					Blood Pact<br>Final Boss summaries<br>blog
+					<!-- https://felconcentration.wordpress.com/as-writer/ -->
+					<!-- https://felconcentration.wordpress.com/2014/02/27/long-live-blood-pact/ -->
+				</p>
+			</div>
+			<div class="column">
+				<p id="button3" class="col-button">
+					<i class="fas fa-file-alt fa-2x float-icon dark-icon"></i>  documentation
+				</p>
+				<p id="content3" class="col-content">
+					WoW Analyzer JS docs
+					<!-- https://github.com/poneria/WoWAnalyzer/commits?author=poneria -->
+				</p>
+			</div>
+		</div>
+	</section>
 
-		<section id="content-skills">
-			<p>skills >> past jobs / resume, but as transferrable skills</p>
-		</section>
+	<script>
+		$(document).ready(function() {
+			// content boxes reveal
+			$('#button1').on('click', function() {
+				$('#content1').slideToggle();
+			});
+			$('#button2').on('click', function() {
+				$('#content2').slideToggle();
+			});
+			$('#button3').on('click', function() {
+				$('#content3').slideToggle();
+			});
+		});
 
-		<section id="content-hobbies">
-			<p>hobbies >> hobbies as transferrable skills + interests</p>
-		</section>
-	-->
+	</script>
+
 </body>
 </html>
