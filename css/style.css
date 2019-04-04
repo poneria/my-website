@@ -1,13 +1,12 @@
 /* ----------------------------------------------------------------------
 -- generic HTML -------------------------------------------------------
-
-gradient backgrounds
-	https://cssgradient.io
-	dark green: #09792f | rgba(9,121,47,1)
-	medium green: #3aae6a | rgba(58,174,106,1)
-	light green: #6ce6a7 | rgba(108,230,167,1)
-	lightest green: #ace4c7 | rgba(172,228,199,1)
 */
+
+:root {
+	--darkgreen: #09792f; 
+	--medgreen: #3aae6a;
+	--lightgreen: #6ce6a7;
+}
 
 * {
 	box-sizing: border-box;
@@ -30,7 +29,7 @@ body {
 */
 
 #header {
-	background: rgb(9,121,47);
+	background: var(--darkgreen-rgb);
 	background: linear-gradient(180deg, rgba(9,121,47,1) 0%, rgba(58,174,106,1) 50%, rgba(108,230,167,1) 100%);
 	display: flex;
 	flex-direction: column;
@@ -69,54 +68,63 @@ body {
 }
 
 .navbar > a {
-	border-color: #3aae6a;
+	border: var(--medgreen);
 	border-style: solid; 
-	border-width: 4px 0px 0px 0px;
+	border-width: 0px 0px 2px 0px;
 	margin: 10px;
 	padding: 5px 20px;
 }
 
 .navbar > #nav-select {
-	border-color: #09792f;
+	border-color: var(--darkgreen);
 	border-width: 0px 0px 8px 0px;
 }
 
-.navbar > a:hover,
-.navbar > #nav-select:hover {
+.navbar > a:hover {
+	border-width: 0px 0px 8px 0px;
+}
+
+#nav-select:hover {
 	border-width: 4px 0px 8px 0px;
 }
 
 /*------------------------------------------------------------
 -- CONTENT -------------------------------------------------
-gradient backgrounds
-	https://cssgradient.io
-	dark green: #09792f | rgba(9,121,47,1)
-	medium green: #3aae6a | rgba(58,174,106,1)
-	light green: #6ce6a7 | rgba(108,230,167,1)
-	lightest green: #ace4c7 | rgba(172,228,199,1)
 */
 
 i.fab, i.fas {
-	color: #6ce6a7;
-	margin: auto;
+	padding: 10px;
 	text-align: center;
 }
 
-i.dark-icon {
-	color: #3aae6a;
+i.dark-green { color: var(--darkgreen); }
+i.medium-green { color: var(--medgreen); }
+i.light-green { color: var(--lightgreen); }
+
+i:hover { 
+	color: var(--darkgreen); 
 }
 
 #content {
 	display: grid;
-	grid-template-columns: 1fr 10px 50px 10px minmax(320px, 600px) 10px 1fr;
+	grid-template-columns: 1fr 10px 600px 10px 1fr;
 }
 
 #content > * {
-	grid-column: 5 / 6;
-	vertical-align: center;
+	grid-column: 3 / 4;
+
+	font-weight: bold;
 }
 
-#content > i {
-	grid-column: 3 / 4;
-	padding: 10px 0px;
+.rows {
+	display: flex;
+	flex-direction: row;
+	padding: 20px 0px;
+}
+
+.columns {
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+	text-align: center;
 }
