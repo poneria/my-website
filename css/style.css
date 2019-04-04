@@ -75,6 +75,10 @@ gradient backgrounds
 	lightest green: #ace4c7 | rgba(172,228,199,1)
 */
 
+.nav {
+	padding: 0px;
+}
+
 .nav > li {
 	border: 2px solid #3aae6a;
 	color: #000000;
