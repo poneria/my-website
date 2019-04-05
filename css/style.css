@@ -175,6 +175,11 @@ i.fas:hover {
 }
 
 @media all and (max-width: 440px) {
+	#header {
+		position: static;
+		top: auto;
+	}
+
 	.navbar {
 		display: flex;
 		flex-direction: column;
