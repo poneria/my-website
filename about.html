@@ -24,27 +24,74 @@
 		</div>
 	</div>
 
-	<div id="about">
-		<i id="gaming-icon" class="fas fa-dice-d20 fa-2x dark-green"></i><h2>Gaming</h2>
-		<div id="gaming-content">
-			<p>I like to play D&D and GW2, and I like puzzles.</p>
-		</div>
+	<div class="content">
+		<div id="about">
+			<div class="card">
+				<i class="fab fa-d-and-d fa-2x dark-green"></i>
+				<span class="card-title">D&D</span>
+				<p>I currently play a level 13 dwarf monk in the Way of the Four Elements in a 5e local game. She's a fire monk who, with a bit of homebrew, can swap the elemental damage according to specific elements activated by her handwraps.</p>
+			</div>
 
-		<i id="arts-icon" class="fas fa-glasses fa-2x dark-green"></i><h2>Arts</h2>
-		<div id="arts-content">
-			<p>I like reading, drawing, and listening to music.</p>
+			<div class="card">
+				<i class="fas fa-headset fa-2x dark-green"></i>
+				<span class="card-title">MMOs</span>
+				<p>I currently play <i>Guild Wars 2</i>. I raid once per week on my heal Druid (Ranger), though I started with my Elementalist as a Weaver spec. I like jumping puzzles and completing collections. I've played <i>World of Warcraft</i> as an Affliction Warlock and Guardian Druid previously.</p>
+			</div>
+
+			<div class="card">
+				<i class="fas fa-mouse-pointer fa-2x dark-green"></i>
+				<span class="card-title">PC Games</span>
+				<p>Before I was introduced to MMOs, I played a lot of RPG series on the PC, including <i>Icewind Dale</i>, <i>The Elder Scrolls III: Morrowind</i>, and the <i>Myst</i> series. My favorite <i>Might and Magic</i> game was probably the 3 & 4 combo <i>World of Xeen</i>.</p>
+			</div>
+
+			<div class="card">
+				<i class="fab fa-critical-role fa-2x dark-green"></i>
+				<span class="card-title">Critical Role</span>
+				<p>I'm not always up-to-date on the latest episode of Campaign 2, since I have to go to bed halfway through an episode now, but I don't mind spoilers. I loved Campaign 1 and probably won't shut up about it. I also love other shows the CR team is producing, like <i>Between the Sheets</i> and <i>Pub Draw</i>.</p>
+			</div>
+
+			<div class="card" style="grid-column: 2 / 3; grid-row: 2 / span 2;">
+				<i class="fas fa-book fa-2x dark-green"></i>
+				<span class="card-title">Books</span>
+				<p><b>Currently Reading: </b>
+					<ul>
+						<li><i>Lab Girl</i>, Hope Jahren (2016)</li>
+						<li><i>Blackened White</i>, Brian W. Foster (2012) *reread</li>
+					</ul>
+				</p>
+				<p><b>Next: </b>
+					<ul>
+						<li><i>SPQR: A History of Ancient Rome</i>, Mary Beard (2015)</li>
+						<li><i>Code Girls: The Untold Story of the American Women Code Breakers of World War II</i>, Liza Mundy (2017)</li>
+					</ul>
+				</p>
+				<p><b>Recently Finished: </b>
+					<ul>
+						<li><i>As You Wish: Inconceivable Tales from the Making of The Princess Bride</i>, Cary Elwes (2014)</li>
+						<li><i>If You Come Softly</i>, Jacqueline Woodson (2010)</li>
+					</ul>
+				</p>
+			</div>
+
+			<div class="card">
+				<i class="fas fa-podcast fa-2x dark-green"></i>
+				<span class="card-title">Podcasts</span>
+				<p>I listen to podcasts often while doing chores or working on homework. My most played is probably Above & Beyond's Group Therapy.</p>
+			</div>
+
+			<div class="card">
+				<i class="fas fa-palette fa-2x dark-green"></i>
+				<span class="card-title">Drawing</span>
+				<p>Since I'm following CR's <i>Pub Draw</i>, albeit slow to catchup, I've dtarting drawing again. Right now I'm using mechanical pencils to sketch and colored pencils to color.</p>
+			</div>
+
+			<div class="card">
+				<i class="fas fa-bicycle fa-2x dark-green"></i>
+				<span class="card-title">Biking</span>
+				<p>When it gets warmer and I have more free time after the semester ends, I want to reteach myself how to bike. I never learned as a kid; I lived on a pretty steep hill.</p>
+			</div>
+			
 		</div>
 	</div>
-
-	<script>
-		$(document).ready(function() {
-			$('#gaming-icon').on('click', function() {
-				$('#gaming-content').slideToggle();
-			});
-			$('#arts-icon').on('click', function() {
-				$('#arts-content').slideToggle();
-			});
-		});
-	</script>
 </body>
 </html>
