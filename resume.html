@@ -13,28 +13,22 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-	
-	<header class="title-wrapper">
-		<div class="container">
-			<h1 class="header-title">Megan O'Neill</h1>
-			<h3 class="header-subtitle">dream job: data visualization storytelling</h3>
+	<div id="header">
+		<div class="title">Megan O'Neill</div>
+		<div class="subtitle">Dream Job: Data + Visual Storytelling</div>
+		<div class="navbar">
+			<a href="index.html">contact</a>
+			<a href="work.html">work</a>
+			<a id="nav-select" href="resume.html">skills</a>
+			<a href="about.html">about</a>
 		</div>
+	</div>
 
-		<div class="container">
-			<ul class="nav">
-				<li><a href="index.html">contact</a></li>
-				<li><a href="work.html">projects</a></li>
-				<li id="nav-select"><a href="resume.html">skills</a></li>
-				<li><a href="about.html">hobbies</a></li>
-			</ul>
-		</div>
-	</header>
-
-	<section class="content">
-		<div class="container">
+	<div class="content">
+		<div class="about">
 			<h3 class="content-subtitle">previous work & transferrable skills</h3>
 
-			<div class="column">
+			<div class="card">
 				<p id="button1" class="col-button">
 					<i class="fas fa-bus fa-2x float-icon dark-icon"></i>  bus driving
 				</p>
@@ -42,7 +36,7 @@
 					big vehicles through complicated circles
 				</p>
 			</div>
-			<div class="column">
+			<div class="card">
 				
 				<p id="button2" class="col-button">
 					<i class="fas fa-pen-nib fa-2x float-icon dark-icon"></i>  freelance writing
@@ -51,7 +45,7 @@
 					columns<br>guides<br>summaries
 				</p>
 			</div>
-			<div class="column">
+			<div class="card">
 				<p id="button3" class="col-button">
 					<i class="fas fa-hamburger fa-2x float-icon dark-icon"></i>  food service
 				</p>
@@ -60,23 +54,6 @@
 				</p>
 			</div>
 		</div>
-	</section>
-
-	<script>
-		$(document).ready(function() {
-			// content boxes reveal
-			$('#button1').on('click', function() {
-				$('#content1').slideToggle();
-			});
-			$('#button2').on('click', function() {
-				$('#content2').slideToggle();
-			});
-			$('#button3').on('click', function() {
-				$('#content3').slideToggle();
-			});
-		});
-
-	</script>
-
+	</div>
 </body>
 </html>

@@ -34,13 +34,14 @@ body {
 	display: flex;
 	flex-direction: column;
 	position: sticky;
+	top: 0;
 }
 
 .title {
 	color: #ffffff;
 	font-size: 65px;
 	font-weight: bold;
-	margin-top: 100px;
+	margin-top: 50px;
 	text-align: center;
 }
 
@@ -159,4 +160,43 @@ i.fas:hover {
 	font-size: 28px;
 	font-weight: bold;
 	padding-left: 10px;
+}
+
+@media all and (max-width: 940px) {
+	#about {
+		grid-template-columns: repeat(2, 300px);
+	}
+}
+
+@media all and (max-width: 630px) {
+	#about {
+		grid-template-columns: 300px;
+	}
+}
+
+@media all and (max-width: 440px) {
+	.navbar {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.navbar > a {
+		border-width: 0px;
+		margin: 10px;
+		padding: 5px 20px;
+	}
+
+	.navbar > #nav-select {
+		background-color: var(--darkgreen);
+		border-width: 0px;
+	}
+
+	.navbar > a:hover {
+		background-color: var(--medgreen);
+		border-width: 0px;
+	}
+
+	#nav-select:hover {
+		border-width: 0px;
+	}
 }

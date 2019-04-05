@@ -13,35 +13,22 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
 </head>
 <body>
-	
-	<header class="title-wrapper">
-		<div class="container">
-			<h1 class="header-title">Megan O'Neill</h1>
-			<h3 class="header-subtitle">dream job: data visualization storytelling</h3>
+	<div id="header">
+		<div class="title">Megan O'Neill</div>
+		<div class="subtitle">Dream Job: Data + Visual Storytelling</div>
+		<div class="navbar">
+			<a href="index.html">contact</a>
+			<a id="nav-select" href="work.html">work</a>
+			<a href="resume.html">skills</a>
+			<a href="about.html">about</a>
 		</div>
+	</div>
 
-		<div class="container">
-			<ul class="nav">
-				<li><a href="index.html">contact</a></li>
-				<li id="nav-select"><a href="work.html">projects</a></li>
-				<li><a href="resume.html">skills</a></li>
-				<li><a href="about.html">hobbies</a></li>
-			</ul>
-		</div>
-	</header>
-
-	<!--
-		Trying out CodePen to try tabbed content w/ CSS.
-		Can't quite get this to work, & it won't work in W3Schools, so something about the CSS/SCSS syntax, maybe?
-
-		https://codepen.io/anon/pen/oOjOMe?editors=1100 
-	-->
-
-	<section class="content">
-		<div class="container">
+	<div class="content">
+		<div id="about">
 			<h3 class="content-subtitle">now I'm just showing off</h3>
 
-			<div class="column">
+			<div class="card">
 				<p id="button1" class="col-button">
 					<i class="fas fa-desktop fa-2x float-icon dark-icon"></i>  github 1
 				</p>
@@ -49,7 +36,7 @@
 					probably this site tbh
 				</p>
 			</div>
-			<div class="column">
+			<div class="card">
 				
 				<p id="button2" class="col-button">
 					<i class="fas fa-keyboard fa-2x float-icon dark-icon"></i>  fave writing
@@ -60,7 +47,7 @@
 					<!-- https://felconcentration.wordpress.com/2014/02/27/long-live-blood-pact/ -->
 				</p>
 			</div>
-			<div class="column">
+			<div class="card">
 				<p id="button3" class="col-button">
 					<i class="fas fa-file-alt fa-2x float-icon dark-icon"></i>  documentation
 				</p>
@@ -70,24 +57,6 @@
 				</p>
 			</div>
 		</div>
-
-	</section>
-
-	<script>
-		$(document).ready(function() {
-			// content boxes reveal
-			$('#button1').on('click', function() {
-				$('#content1').slideToggle();
-			});
-			$('#button2').on('click', function() {
-				$('#content2').slideToggle();
-			});
-			$('#button3').on('click', function() {
-				$('#content3').slideToggle();
-			});
-		});
-
-	</script>
-
+	</div>
 </body>
 </html>
